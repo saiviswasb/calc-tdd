@@ -22,6 +22,10 @@ class TestCalculator(unittest.TestCase):
         result = self.calc.divide(6, 3)
         self.assertEqual(result, 2.0)
 
+    def test_modulo(self):
+        result = self.calc.modulo(5, 3)
+        self.assertEqual(result, 2)
+
     def test_divide_by_zero(self):
         with self.assertRaises(ValueError):
             self.calc.divide(5, 0)
