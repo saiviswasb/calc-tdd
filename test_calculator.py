@@ -30,6 +30,10 @@ class TestCalculator(unittest.TestCase):
         result = self.calc.modulo(-7, 3)
         self.assertEqual(result, 2)
 
+    def test_modulo_by_zero(self):
+        with self.assertRaises(ValueError):
+            self.calc.modulo(5, 0)
+
     def test_divide_by_zero(self):
         with self.assertRaises(ValueError):
             self.calc.divide(5, 0)
