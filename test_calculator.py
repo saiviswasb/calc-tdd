@@ -9,7 +9,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_add(self):
         result = self.calc.add(2, 3)
-        self.assertEqual(result, 99)
+        self.assertEqual(result, 5)
 
     def test_subtract(self):
         result = self.calc.subtract(5, 3)
