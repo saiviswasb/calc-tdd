@@ -26,6 +26,10 @@ class TestCalculator(unittest.TestCase):
         result = self.calc.power(0, 0)
         self.assertEqual(result, 1)
 
+    def test_power_negative_exponent(self):
+        result = self.calc.power(2, -1)
+        self.assertEqual(result, 0.5)
+
     def test_divide(self):
         result = self.calc.divide(6, 3)
         self.assertEqual(result, 2.0)
