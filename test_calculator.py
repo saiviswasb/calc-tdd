@@ -22,6 +22,10 @@ class TestCalculator(unittest.TestCase):
         result = self.calc.power(2, 3)
         self.assertEqual(result, 8)
 
+    def test_power_zero_to_zero(self):
+        result = self.calc.power(0, 0)
+        self.assertEqual(result, 1)
+
     def test_divide(self):
         result = self.calc.divide(6, 3)
         self.assertEqual(result, 2.0)
