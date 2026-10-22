@@ -22,6 +22,9 @@ class TestCalculator(unittest.TestCase):
     def test_divide(self):
         result = self.calc.divide(6, 3)
         self.assertEqual(result, 2.0)
+        # Pin float return type explicitly
+        result_float = self.calc.divide(7, 2)
+        self.assertEqual(result_float, 3.5)
 
     def test_divide_by_zero(self):
         with self.assertRaises(ValueError):
