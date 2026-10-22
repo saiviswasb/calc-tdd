@@ -18,6 +18,10 @@ class TestCalculator(unittest.TestCase):
         result = self.calc.multiply(4, 3)
         self.assertEqual(result, 12)
 
+    def test_power(self):
+        result = self.calc.power(2, 3)
+        self.assertEqual(result, 8)
+
     def test_divide(self):
         result = self.calc.divide(6, 3)
         self.assertEqual(result, 2.0)
