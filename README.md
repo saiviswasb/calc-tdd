@@ -24,3 +24,18 @@ Python calculator project developed using Test-Driven Development (TDD), featuri
 To execute the unit and property tests locally with verbose output:
 ```powershell
 python -m unittest -v
+
+To run coverage analysis locally:
+coverage run -m unittest discover -s . -p "test_calculator.py"
+coverage report
+
+
+### Next Steps to Finalize Your Repository
+To match the structure referenced in the README and satisfy your remaining checklist items:
+1. Create a `docs/` folder in your project directory.
+2. Place your narrative and report write-ups inside `docs/` (`docs/q1-narrative.md`, `docs/q6-report.md`, and `docs/ai-usage-log.md`).
+3. Commit and push the updated `README.md` and documentation folder:
+   ```powershell
+   git add README.md docs/
+   git commit -m "docs: update README with accurate coverage and structure"
+   git push origin main
